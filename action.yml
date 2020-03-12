@@ -1,0 +1,15 @@
+# action.yml
+name: 'Swagger Codegen'
+description: 'Template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI / Swagger definition.'
+branding:
+    icon: code
+    color: green
+inputs:
+  args:  # id of input
+    description: 'Arguments'
+    required: true
+runs:
+  using: 'docker'
+  image: 'docker://swaggerapi/swagger-codegen-cli'
+  args:
+    - ${{ inputs.args }}
