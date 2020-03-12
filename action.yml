@@ -1,6 +1,6 @@
 # action.yml
 name: 'Swagger Codegen'
-description: 'Template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI / Swagger definition.'
+description: 'Run Swagger Codegen with Github Actions'
 branding:
     icon: code
     color: green
