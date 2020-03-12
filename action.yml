@@ -4,11 +4,6 @@ description: 'Run Swagger Codegen with Github Actions'
 branding:
     icon: code
     color: green
-inputs:
-  args:
-    description: 'Arguments'
-    required: true
 runs:
   using: 'docker'
   image: 'docker://swaggerapi/swagger-codegen-cli'
-  args: ${{ inputs.args }}
