@@ -5,11 +5,10 @@ branding:
     icon: code
     color: green
 inputs:
-  args:  # id of input
+  args:
     description: 'Arguments'
     required: true
 runs:
   using: 'docker'
   image: 'docker://swaggerapi/swagger-codegen-cli'
-  args:
-    - ${{ inputs.args }}
+  args: ${{ inputs.args }}
